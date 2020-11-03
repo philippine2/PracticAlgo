@@ -12,16 +12,49 @@ namespace OwnParcticealgo
         static void Main(string[] args)
         {
             int[] array = { 1,2,3,4,5};
+            char [] name ={'P','H','I','L','I','A','T','E','M','B','O'};
+
+
             printOddNumber();
             printandSum(array);        
             int  [] returnedArray = returnArray();
             printArray(array);
-
-
+            printNumber(array);
+            manipulateName(name);
+            reverseArray(name);
 
 
         }
 
+        public static char [] reverseArray(char []S){
+            char [] L = new char [S.Length];
+            int index =0;
+            for(int i=S.Length-1; i>=0; i--){
+                L[index]= S[i];
+                index++;
+                
+            }
+            return L;
+        }
+
+        public static int manipulateName(char [] A){
+            int count =0;
+
+            for(int i=0; i<A.Length;i++){
+                if(A[i]=='I'){
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static void printNumber(int []  z){
+
+                for(int i =1; i<z.Length; i++){
+                    Console.WriteLine(z[i]);
+                }
+                Console.ReadLine();
+        }
 
         public static void printOddNumber()
         {
@@ -84,7 +117,7 @@ namespace OwnParcticealgo
 
             }
 
-           // Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
