@@ -1,0 +1,13 @@
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.exe
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.deps.json
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.runtimeconfig.json
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.runtimeconfig.dev.json
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.dll
+C:\Users\WIndows 10\Desktop\practice\bin\Debug\netcoreapp3.1\practice.pdb
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.csprojAssemblyReference.cache
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.csproj.CoreCompileInputs.cache
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.AssemblyInfoInputs.cache
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.AssemblyInfo.cs
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.dll
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.pdb
+C:\Users\WIndows 10\Desktop\practice\obj\Debug\netcoreapp3.1\practice.genruntimeconfig.cache
