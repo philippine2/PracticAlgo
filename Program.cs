@@ -11,22 +11,61 @@ namespace OwnParcticealgo
     {
         static void Main(string[] args)
         {
-            int[] array = { 1,2,3,4,5};
+            int[] array = { 1,2,3,4,5,6,7,8,9,10};
             char [] name ={'P','H','I','L','I','A','T','E','M','B','O'};
 
 
-            printOddNumber();
-            printandSum(array);        
-            int  [] returnedArray = returnArray();
-            printArray(array);
-            printNumber(array);
-            manipulateName(name);
-            reverseArray(name);
+               // printOddNumber();
+               //
+               // printandSum(array);        
+              //   int  [] returnedArray = returnArray();
+               //  printArray(array);
+                 // printNumber(array);
+                 //manipulateName(name);
+                // reverseArray(name);
+
+              // int []newArray= reverseMidArrayLeft(array);
+              // printArray(newArray);
+                
+                int []newArray2= reverseMidArrayRight(array);
+               printArray(newArray2);
 
 
         }
+        public static int []reverseMidArrayRight(int [] P){
 
-        public static char [] reverseArray(char []S){
+            int [] newArray2 = new int [P.Length];
+            int index = 0;
+
+            for(int i= P.Length/2; i>0; i--){
+                newArray2[index]=P[i];
+                index++;
+            }
+           for(int i=P.Length/2 + 1; i<P.Length; i++){
+                newArray2[index]=P[i];
+                index++;
+            }
+
+            return newArray2;
+        }
+
+       public static int[] reverseMidArrayLeft(int [] O){
+
+            int [] newArray = new int [O.Length];
+            int index = 0;
+
+            for(int i= O.Length/2;i>=0; i--){
+                newArray[index]= O[i];
+                index++;
+            }
+            for(int i=O.Length/2 + 1; i< O.Length; i++){
+                newArray[index]=O[i];
+                index++;
+            }
+           return newArray;
+        }
+
+        public static char [] reverseArray(char [] S){
             char [] L = new char [S.Length];
             int index =0;
             for(int i=S.Length-1; i>=0; i--){
@@ -111,12 +150,14 @@ namespace OwnParcticealgo
 
         public static void printArray(int [] array)
         {
+            Console.Write("[");
             for (int i=0; i < array.Length; i++)
             {
-                Console.WriteLine(array[i]);
+                Console.Write(array[i]+",");
+
 
             }
-
+            Console.Write("]");
             Console.ReadLine();
         }
     }
