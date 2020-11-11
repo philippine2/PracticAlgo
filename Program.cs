@@ -30,19 +30,21 @@ namespace OwnParcticealgo
                // int []newArray2= reverseMidArrayRight(array);
               // printArray(newArray2);
                //addFive(array);
-               AddFive(array);
+               int [] k = AddFive(array);
+               printArray(k);
+              // AddFive(array);
                     
 
         }
-        public static void AddFive(int [] two){
+        public static int [] AddFive(int [] two){
             for(int i =0; i<two.Length; i++){
                
 
                 two[i] = two[i] + 5;
 
-                Console.WriteLine(two[i]);
+                
             }
-           Console.ReadLine();
+          return two;
         }
 
         public static void addFive(int [] five){
