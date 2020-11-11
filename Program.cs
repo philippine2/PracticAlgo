@@ -11,7 +11,7 @@ namespace OwnParcticealgo
     {
         static void Main(string[] args)
         {
-            int[] array = { 1,2,3,4,5,6,7,8,9,10};
+           
             char [] name ={'P','H','I','L','I','A','T','E','M','B','O'};
 
 
@@ -26,12 +26,37 @@ namespace OwnParcticealgo
 
               // int []newArray= reverseMidArrayLeft(array);
               // printArray(newArray);
-                
-                int []newArray2= reverseMidArrayRight(array);
-               printArray(newArray2);
-
+                 int[] array = { 1,2,3,4,5,6,7,8,9,10};
+               // int []newArray2= reverseMidArrayRight(array);
+              // printArray(newArray2);
+               //addFive(array);
+               AddFive(array);
+                    
 
         }
+        public static void AddFive(int [] two){
+            for(int i =0; i<two.Length; i++){
+               
+
+                two[i] = two[i] + 5;
+
+                Console.WriteLine(two[i]);
+            }
+           Console.ReadLine();
+        }
+
+        public static void addFive(int [] five){
+             int [] newArray2 = new int [five.Length];
+            int lo= 5;
+            for(int i = 0; i<five.Length;i++){
+               newArray2[i]= lo + five[i];
+                Console.WriteLine(newArray2[i]);
+
+            }
+            Console.ReadLine();
+
+        }
+        
         public static int []reverseMidArrayRight(int [] P){
 
             int [] newArray2 = new int [P.Length];
