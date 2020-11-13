@@ -26,16 +26,44 @@ namespace OwnParcticealgo
 
               // int []newArray= reverseMidArrayLeft(array);
               // printArray(newArray);
-                 int[] array = { 1,2,3,4,5,6,7,8,9,10};
+                
+            
+                // test(array,target);
+             
+
                // int []newArray2= reverseMidArrayRight(array);
               // printArray(newArray2);
                //addFive(array);
-               int [] k = AddFive(array);
-               printArray(k);
+              // int [] k = AddFive(array);
+              // printArray(k);
               // AddFive(array);
+               int[] array = {20, 12, 23, 17, 7, 8, 10, 2, 1, 0};
+             //
+              oddEvenNumber(array);
+              int [] newarray= oddEvenNumber(array);
+              printArray(newarray);
+            
                     
 
         }
+    
+       public static int [] oddEvenNumber(int [] k ){
+            int [] newArray2 = new int [k.Length];
+            int left=0;
+            int right=k.Length-1;
+            for (int i = 0; i < k.Length; i++) {
+   
+                if(k[i]%2==0){
+                    newArray2[left]= k[i];
+                    left++;
+                }
+                else if (k[i]%2==1){ 
+                    newArray2[right]=k[i];
+                    right--;
+                }
+            }   
+            return newArray2;
+       }
         public static int [] AddFive(int [] two){
             for(int i =0; i<two.Length; i++){
                
